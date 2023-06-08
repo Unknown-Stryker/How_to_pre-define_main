@@ -6,7 +6,7 @@
 #define CLIENT_MAIN(argc_name, argv_name) \
 int client_main(int argc_name, char** argv_name);\
 std::function<int(int, char**)> engine_main::s_client_app_entry_point;\
-nothing_t pass_client_main = engine_main::set(client_main);\
+static nothing_t pass_client_main = engine_main::set(client_main);\
 int client_main(int argc_name, char** argv_name)
 
 
